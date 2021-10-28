@@ -5,7 +5,7 @@
       location = "container:"
       name = "Day01">
       <FileRef
-         location = "group:BinarySearch/BinarySearch.xcodeproj">
+         location = "group:BinarySearchDemo/BinarySearchDemo.xcodeproj">
       </FileRef>
    </Group>
 </Workspace>
