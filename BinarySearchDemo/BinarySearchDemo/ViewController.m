@@ -35,6 +35,10 @@
      著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
      
      
+     时间复杂度可以表示O(h)=O(log2n)
+     https://www.jianshu.com/p/fb7001a8e0b1
+     
+     
      解析：
      https://leetcode-cn.com/problems/binary-search/solution/dai-ma-sui-xiang-lu-dai-ni-xue-tou-er-fe-ajox/
      */

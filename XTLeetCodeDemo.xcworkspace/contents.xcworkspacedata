@@ -3,7 +3,23 @@
    version = "1.0">
    <Group
       location = "container:"
+      name = "Day02">
+      <FileRef
+         location = "group:RotateArray/RotateArray.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:SortedSquares/SortedSquares.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
       name = "Day01">
+      <FileRef
+         location = "group:SearchInsert/SearchInsert.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:TheFirstIncorrectVersion/TheFirstIncorrectVersion.xcodeproj">
+      </FileRef>
       <FileRef
          location = "group:BinarySearchDemo/BinarySearchDemo.xcodeproj">
       </FileRef>
