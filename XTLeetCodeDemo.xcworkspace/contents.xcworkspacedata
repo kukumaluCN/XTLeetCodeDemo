@@ -3,6 +3,26 @@
    version = "1.0">
    <Group
       location = "container:"
+      name = "Day04">
+      <FileRef
+         location = "group:ReverseWords/ReverseWords.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:ReverseString/ReverseString.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "Day03">
+      <FileRef
+         location = "group:TwoSum/TwoSum.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:MoveZeroes/MoveZeroes.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
       name = "Day02">
       <FileRef
          location = "group:RotateArray/RotateArray.xcodeproj">

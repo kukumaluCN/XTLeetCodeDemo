@@ -86,5 +86,58 @@
  }
  */
 
+/**
+class Solution {
+    
+    // 方法一：复制数组后，根据移动索引重新赋值
+    func rotate(_ nums: inout [Int], _ k: Int) {
+        let copy = nums
+        for index in 0..<nums.count {
+            // 移动 k 后的索引
+            let toIndex = (index + k) % nums.count
+            nums[toIndex] = copy[index]
+        }
+    }
+
+    
+    方法二:
+    先翻转 整个数组
+    再翻转前 k 个元素 [0, k - 1]
+    最后翻转后 n-k 个元素 [k, count - 1]
+    
+    func rotate(_ nums: inout [Int], _ k: Int) {
+        let k = k % nums.count // 处理输入 k 大于数组长度问题。
+        reverse(&nums, 0, nums.count - 1)
+        reverse(&nums, 0, k - 1)
+        reverse(&nums, k, nums.count - 1)
+    }
+
+    // 翻转数组指定区间的数据
+    func reverse(_ nums: inout [Int], _ begin: Int, _ end: Int) {
+        var l = begin
+        var r = end
+        while l < r {
+            // 原地对换两数 方法一：
+            nums[l] = nums[l] + nums[r]
+            nums[r] = nums[l] - nums[r]
+            nums[l] = nums[l] - nums[r]
+            /
+            
+            //原地对换两数 方法二
+            nums[l] = nums[l]^nums[r]
+            nums[r] = nums[l]^nums[r]
+            nums[l] = nums[l]^nums[r]
+            l += 1
+            r -= 1
+        }
+    }
+
+}
+
+作者：CoderWangx
+链接：https://leetcode-cn.com/problems/rotate-array/solution/swift-ji-bai-100-by-coderwangx-9qg9/
+来源：力扣（LeetCode）
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+*/
 
 @end
