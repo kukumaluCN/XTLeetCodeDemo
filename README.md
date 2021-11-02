@@ -120,6 +120,7 @@ leet 876. 链表的中间结点
 
 OC链表的简易实现
 [OC实现一个简单的单链表](https://blog.csdn.net/Morris_/article/details/104439214)
+
 2. RemoveNthFromEnd
 leet 19. 删除链表的倒数第 N 个结点
 
@@ -169,6 +170,7 @@ class Solution {
 
 2. CheckInclusion
 leet 567. 字符串的排列
+
 解题思路：
 本质就是字符出现的频次map的匹配，因为map是无序的。
 窗口长度就是s1的长度，s2会遍历s2-s1次，匹配到字符频次相同的map，就是结果。
