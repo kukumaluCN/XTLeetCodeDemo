@@ -3,6 +3,26 @@
    version = "1.0">
    <Group
       location = "container:"
+      name = "Day06">
+      <FileRef
+         location = "group:CheckInclusion/CheckInclusion.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:LengthOfLongestSubstring/LengthOfLongestSubstring.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "Day05">
+      <FileRef
+         location = "group:RemoveNthFromEnd/RemoveNthFromEnd.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:MiddleNode/MiddleNode.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
       name = "Day04">
       <FileRef
          location = "group:ReverseWords/ReverseWords.xcodeproj">
